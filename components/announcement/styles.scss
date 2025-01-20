@@ -1,0 +1,106 @@
+@import "../../abstracts/mixins";
+@import "../../abstracts/variables";
+
+
+$announcement-img-h-lg: 15.625rem;
+$announcement-img-h-sm: 13.25rem;
+$announcement-img-w-lg: 24.625rem;
+
+.announcement {
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &__heading {
+    flex-basis: 62.5%;
+    font: {
+      family: $heading-font;
+      size: setFontSizeRem($rf-size, 36);
+      weight: 400;
+    };
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 1.35;
+
+    &_highlight {
+      color: $marquee-bg;
+      font-weight: 700;
+    }
+
+    &_top {
+      margin-bottom: 0;
+    }
+
+    &_bottom {
+      margin-bottom: 0;
+    }
+
+  }
+
+  &__image {
+    position: absolute;
+    height: $announcement-img-h-lg;
+    width: $announcement-img-w-lg;
+    right: 0;
+    top: calc((100% - $announcement-img-h-lg) / 2);
+    background-image: url("../../assets/desktop/players_desktop.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &__hidden {
+    &_sm {
+      display: none;
+    }
+
+    &_lg {
+      display: inline-block;
+    }
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+  .announcement {
+
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__heading {
+      font: {
+        size: setFontSizeRem($rf-size, 28);
+      };
+
+      &_top {
+        margin-bottom: 1.5rem;
+      }
+
+      &_bottom {
+        margin-top: 1.5rem;
+      }
+    }
+
+    &__hidden {
+      &_sm {
+        display: inline-block;
+      }
+
+      &_lg {
+        display: none;
+      }
+    }
+
+    &__image {
+      position: relative;
+      top: 0;
+      height: $announcement-img-h-sm;
+      width: 100%;
+    }
+  }
+}
