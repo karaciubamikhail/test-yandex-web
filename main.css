@@ -425,7 +425,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/desktop/mask_overlay_desktop.png");
+  background-image: url("./assets/desktop/mask_overlay_desktop.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -436,7 +436,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/desktop/city_desktop_xl.png");
+  background-image: url("./assets/desktop/city_desktop_xl.png");
   background-repeat: no-repeat;
   background-position: 37% bottom;
   background-size: 130% auto;
@@ -447,7 +447,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/desktop/kon-white_desktop.png");
+  background-image: url("./assets/desktop/kon-white_desktop.png");
   background-repeat: no-repeat;
   background-position: 73.5% 100%;
   background-size: 13% auto;
@@ -460,7 +460,7 @@ body {
   width: 100%;
   height: 100%;
   margin-top: -1.4%;
-  background-image: url("../assets/desktop/peshka_desktop.png");
+  background-image: url("./assets/desktop/peshka_desktop.png");
   background-repeat: no-repeat;
   background-position: 96% 100%;
   background-size: 5% auto;
@@ -473,7 +473,7 @@ body {
   width: 100%;
   height: 100%;
   margin-top: -19%;
-  background-image: url("../assets/desktop/queen_desktop.png");
+  background-image: url("./assets/desktop/queen_desktop.png");
   background-repeat: no-repeat;
   background-position: 88.5% 100%;
   background-size: 10% auto;
@@ -486,7 +486,7 @@ body {
   width: 100%;
   height: 100%;
   margin-top: -9%;
-  background-image: url("../assets/desktop/king_desktop.png");
+  background-image: url("./assets/desktop/king_desktop.png");
   background-repeat: no-repeat;
   background-position: 62.5% 100%;
   background-size: 10% auto;
